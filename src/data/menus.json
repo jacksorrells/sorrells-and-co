@@ -1,9 +1,9 @@
 {
   "main": [
     {
-      "identifier": "layouts",
-      "title": "Page Layouts",
-      "url": "#",
+      "identifier": "our-communities",
+      "title": "Our Communities",
+      "url": "/our-communities",
       "weight": 2
     }
   ],
