@@ -1,6 +1,12 @@
 {
   "main": [
     {
+      "identifier": "our-story",
+      "title": "Our Story",
+      "url": "/our-story",
+      "weight": "1"
+    },
+    {
       "identifier": "our-communities",
       "title": "Our Communities",
       "url": "/our-communities",
