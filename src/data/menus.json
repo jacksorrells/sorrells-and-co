@@ -7,6 +7,12 @@
       "weight": "1"
     },
     {
+      "identifier": "our-work",
+      "title": "Our Work",
+      "url": "/our-work",
+      "weight": "2"
+    },
+    {
       "identifier": "our-communities",
       "title": "Our Communities",
       "url": "/our-communities",
