@@ -1,17 +1,16 @@
 ---
 label: Section
 hide_body: true
-is_partial: true
 display_field: section_id
 fields:
-  - type: text
-    name: section_id
-    label: Section ID
-    config:
-      required: true
-  - type: text
-    name: component
-    label: Section Component
-    hidden: true
-    config:
-      required: true
+- type: text
+  name: section_id
+  label: Section ID
+  config:
+    required: true
+- type: text
+  name: component
+  label: Section Component
+  hidden: true
+  config:
+    required: true
