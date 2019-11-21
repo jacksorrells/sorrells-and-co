@@ -1,6 +1,12 @@
 {
   "main": [
     {
+      "identifier": "why-us",
+      "title": "Why Us?",
+      "url": "/why-us",
+      "weight": "4"
+    },
+    {
       "identifier": "our-story",
       "title": "Our Story",
       "url": "/our-story",
