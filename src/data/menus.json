@@ -1,12 +1,6 @@
 {
   "main": [
     {
-      "identifier": "why-us",
-      "title": "Why Us?",
-      "url": "/why-us",
-      "weight": "4"
-    },
-    {
       "identifier": "our-story",
       "title": "Our Story",
       "url": "/our-story",
@@ -23,6 +17,18 @@
       "title": "Our Communities",
       "url": "/our-communities",
       "weight": "3"
+    },
+    {
+      "identifier": "why-us",
+      "title": "Why Us?",
+      "url": "/why-us",
+      "weight": "4"
+    },
+    {
+      "identifier": "contact-us",
+      "title": "Contact Us",
+      "url": "/contact-us",
+      "weight": "5"
     }
   ],
   "layouts": [
