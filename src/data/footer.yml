@@ -1,11 +1,11 @@
 ---
 about:
-  enabled: false
+  enabled: true
   title: Sorrells and Co
-  text: ''
+  text: Email us to learn more
   actions:
-  - label: Learn More
-    url: "/no-sidebar"
+  - label: Email Us
+    url: mailto:steve@sorrellsandco.com
     is_primary: false
     is_scrolly: false
 contact_methods:
