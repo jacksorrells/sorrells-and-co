@@ -1,9 +1,8 @@
 ---
 about:
-  enabled: true
-  title: Integer vitae sed feugiat
-  text: Lorem ipsum dolor sit amet interdum mollis sapien. Sed amet ac lorem ipsum
-    interdum tempus sagittis lorem tempus.
+  enabled: false
+  title: Sorrells and Co
+  text: ''
   actions:
   - label: Learn More
     url: "/no-sidebar"
