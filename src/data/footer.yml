@@ -1,6 +1,6 @@
 ---
 about:
-  enabled: true
+  enabled: false
   title: Sorrells and Co
   text: Email us to learn more
   actions:
