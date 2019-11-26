@@ -21,8 +21,6 @@ Transparency/Communication — The lines of ongoing communication between client
 
 ### Design + Build
 
-    Design + Build
-
 Starting with the end in mind, together we discuss your goals — likes and preferences, budgets and timelines. We create a course of action (plans & specifications) to achieve these goals, and we revisit the goals along the way (budget review) to ensure these goals are met. Our in house design team creates an imaginative and personalized plan based on our information gathering meeting, and utilizes a straight forward communication style to assure Sorrells & Company will design + build a home that you wish to afford, while meeting your wants, needs and dreams.
 
 > _Don't be afraid to see what you see._
