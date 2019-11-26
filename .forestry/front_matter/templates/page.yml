@@ -63,6 +63,7 @@ fields:
   config:
     required: true
 pages:
+- src/pages/why-us.md
 - src/pages/our-story.md
 - src/pages/our-work.md
 - src/pages/terms.md
