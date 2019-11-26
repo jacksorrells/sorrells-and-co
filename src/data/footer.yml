@@ -37,5 +37,5 @@ contact_methods:
     text: steve@sorrellsandco.com
     url: mailto:steve@sorrellsandco.com
 copyright:
-  enabled: true
+  enabled: false
   text: "&copy; Jack Sorrells Web Development. All rights reserved."
