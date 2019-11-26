@@ -1,4 +1,25 @@
 ---
 label: Community Page
 hide_body: false
-fields: []
+fields:
+- name: page_title
+  type: text
+  config:
+    required: false
+  label: Page Title
+  description: Title and heading for the page
+- name: page_subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Page Subtitle
+  description: Subtitle for the page
+- name: community_gallery
+  type: image_gallery
+  config: {}
+  label: Community Gallery
+  description: Gallery of pictures for the communities page
