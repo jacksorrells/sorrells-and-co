@@ -63,13 +63,13 @@ fields:
   config:
     required: true
 pages:
+- src/pages/why-us.md
 - src/pages/our-story.md
 - src/pages/cameron-heights.md
 - src/pages/riverside.md
 - src/pages/badger-ranch.md
 - src/pages/our-communities.md
 - src/pages/contact-us.md
-- src/pages/why-us.md
 - src/pages/our-work.md
 - src/pages/right-sidebar.md
 - src/pages/left-sidebar.md
