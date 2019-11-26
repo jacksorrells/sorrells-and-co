@@ -48,3 +48,9 @@ fields:
       name: include_palette
       label: Palette
       template: palette
+- name: logo
+  type: file
+  config:
+    maxSize: 250
+  label: Logo
+  description: Top corner logo
