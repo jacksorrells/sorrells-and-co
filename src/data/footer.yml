@@ -28,7 +28,7 @@ contact_methods:
   - template: contact_with_text
     type: contact_with_text
     title: Fax
-    icon: fa-phone
+    icon: fa-fax
     text: "(254) 772-9394"
   - type: contact_with_link
     template: contact_with_link
