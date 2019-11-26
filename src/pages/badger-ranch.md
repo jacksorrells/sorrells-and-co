@@ -6,7 +6,7 @@ content_img:
 sidebar:
   side: left
   enabled: false
-template: page
+template: community_page
 title: Badger Ranch
 subtitle: Badger Ranch page subtitle
 
