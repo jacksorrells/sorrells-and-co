@@ -29,8 +29,8 @@ contact_methods:
     template: contact_with_link
     title: Email
     icon: fa-envelope-o
-    text: information@untitled.tld
-    url: "#"
+    text: steve@sorrellsandco.com
+    url: mailto:steve@sorrellsandco.com
 copyright:
   enabled: true
   text: "&copy; Jack Sorrells Web Development. All rights reserved."
