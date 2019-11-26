@@ -58,7 +58,7 @@ fields:
 - type: text
   name: template
   label: Template
-  hidden: true
+  hidden: false
   default: page
   config:
     required: true
