@@ -63,6 +63,7 @@ fields:
   config:
     required: true
 pages:
+- src/pages/riverside.md
 - src/pages/cameron-heights.md
 - src/pages/badger-ranch.md
 - src/pages/our-communities.md
