@@ -72,6 +72,5 @@ pages:
 - src/pages/our-story.md
 - src/pages/our-work.md
 - src/pages/right-sidebar.md
-- src/pages/privacy.md
 - src/pages/no-sidebar.md
 - src/pages/left-sidebar.md
