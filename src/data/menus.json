@@ -59,7 +59,8 @@
     {
       "identifier": "cloister",
       "title": "Cloister",
-      "url": "/cloister/"
+      "url": "/cloister/",
+      "weight": "4"
     },
     {
       "identifier": "510-collective",
