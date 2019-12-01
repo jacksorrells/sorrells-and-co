@@ -63,9 +63,9 @@ fields:
   config:
     required: true
 pages:
+- src/pages/badger-ranch.md
 - src/pages/510-collective.md
 - src/pages/cloister.md
-- src/pages/badger-ranch.md
 - src/pages/why-us.md
 - src/pages/our-story.md
 - src/pages/cameron-heights.md
