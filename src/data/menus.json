@@ -60,6 +60,12 @@
       "identifier": "cloister",
       "title": "Cloister",
       "url": "/cloister/"
+    },
+    {
+      "identifier": "510-collective",
+      "title": "510 Collective",
+      "url": "/510-collective/",
+      "weight": ""
     }
   ],
   "submenu": [
