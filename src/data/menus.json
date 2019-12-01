@@ -55,6 +55,11 @@
       "title": "Riverside",
       "url": "/riverside",
       "weight": 3
+    },
+    {
+      "identifier": "cloister",
+      "title": "Cloister",
+      "url": "/cloister/"
     }
   ],
   "submenu": [
