@@ -9,10 +9,10 @@ dataDir: src/data
 pagesDir: src/pages
 pageLayoutKey: template
 metadata:
-  title: Archetype
-  description: a multi-layout theme with posts
-  author: Pixelarity
-  authorURL: 'https://pixelarity.com'
+  title: Sorrells and Co
+  description: Sorrells and Company
+  author: Jack Sorrells
+  authorURL: 'https://jacksorrells.com'
   palettes:
     blue:
       images:
