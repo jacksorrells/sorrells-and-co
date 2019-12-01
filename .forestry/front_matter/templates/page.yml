@@ -63,6 +63,7 @@ fields:
   config:
     required: true
 pages:
+- src/pages/cloister.md
 - src/pages/badger-ranch.md
 - src/pages/why-us.md
 - src/pages/our-story.md
