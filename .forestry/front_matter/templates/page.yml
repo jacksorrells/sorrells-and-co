@@ -66,14 +66,14 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: image_gallery_toggle
+  - name: enabled
     type: boolean
-    label: Image Gallery Toggle
+    label: Enable/Disable Gallery
     description: Toggle for the displaying of the image gallery
-  - name: image_gallery_upload
+  - name: images
     type: image_gallery
     config: {}
-    label: Image Gallery Upload
+    label: Images
     description: Image Gallery Multi-Upload
   label: Image Gallery
   description: Image Gallery Field Group
