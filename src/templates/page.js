@@ -10,7 +10,8 @@ export default class Page extends React.Component {
         let post_len = _.size(post_list);
         console.log('page')
         console.log('this.props -> ', this.props);
-        if (_.get(this.props, 'pageContext.frontmatter.image_gallery.enabled')) {
+        let show_images = _.get(this.props, 'pageContext.frontmatter.image_gallery.enabled');
+        if (show_images) {
           let image_gallery = _.get(this.props, 'pageContext.frontmatter.image_gallery.images');
           console.log('image_gallery -> ', image_gallery)
         }
