@@ -18,12 +18,21 @@ export default class Page extends React.Component {
                             <h2>{_.get(this.props, 'pageContext.frontmatter.title')}</h2>
                             {markdownify(_.get(this.props, 'pageContext.frontmatter.subtitle'))}
                         </header>
+
+                        {/* Freeform content */}
                         <div className="content">
                             {_.get(this.props, 'pageContext.frontmatter.content_img.enabled') && 
                                 <Link to={safePrefix(toUrl(this.props.pageContext.pages, _.get(this.props, 'pageContext.frontmatter.content_img.url')))} className="image fit"><img src={safePrefix(_.get(this.props, 'pageContext.frontmatter.content_img.path'))} alt="" /></Link>
                             }
                             {htmlToReact(_.get(this.props, 'pageContext.html'))}
+
+
+                            {_.get(this.props, 'pageContext.frontmatter.image_gallery.enabled') && 
+                              <p>Let me just see if this guy works.</p>
+                            }
                         </div>
+
+                        {/* Can I remove all of this sidebar? */}
                         {_.get(this.props, 'pageContext.frontmatter.sidebar.enabled') && 
                             <div className="sidebar">
                                 {
@@ -46,6 +55,9 @@ export default class Page extends React.Component {
                                 </React.Fragment>))}
                             </div>
                         }
+
+
+
                     </div>
                 </section>
             </Layout>
