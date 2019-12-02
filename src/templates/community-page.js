@@ -8,6 +8,7 @@ export default class Page extends React.Component {
   render() {
     let post_list = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'), ['frontmatter.show_in_sidebar', true]), 'frontmatter.date', 'desc');
     let post_len = _.size(post_list);
+    console.log('community-page')
     console.log('this.props -> ', this.props);
     return (
       <Layout {...this.props}>
