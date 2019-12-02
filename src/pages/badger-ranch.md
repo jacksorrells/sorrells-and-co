@@ -6,7 +6,7 @@ content_img:
 sidebar:
   side: left
   enabled: false
-template: community-page
+template: page
 title: Badger Ranch
 subtitle: Badger Ranch page subtitle
 image_gallery:
@@ -17,6 +17,8 @@ image_gallery:
   - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch11.jpg
   - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch10.jpg
   - https://res.cloudinary.com/jacksorrells/image/upload/v1519183151/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch1.jpg
+  enabled: false
+  images: []
 
 ---
 Badger Ranch page text description
