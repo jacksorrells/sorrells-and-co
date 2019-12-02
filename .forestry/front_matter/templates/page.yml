@@ -63,20 +63,10 @@ fields:
   config:
     required: true
 - name: gallery
-  type: field_group
+  type: image_gallery
   config: {}
-  fields:
-  - name: show/hide_gallery
-    type: boolean
-    label: Show/Hide Gallery
-    description: Toggle to show or hide the image gallery
-  - name: gallery-file-upload
-    type: image_gallery
-    config: {}
-    label: Gallery File Upload
-    description: Multi-File Upload for the images for the page.
   label: Gallery
-  description: Gallery for Images
+  description: Image gallery for the pages
 pages:
 - src/pages/badger-ranch.md
 - src/pages/510-collective.md
