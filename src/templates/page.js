@@ -10,6 +10,10 @@ export default class Page extends React.Component {
         let post_len = _.size(post_list);
         console.log('page')
         console.log('this.props -> ', this.props);
+        if (_.get(this.props, 'pageContext.frontmatter.image_gallery.enabled')) {
+          let image_gallery = _.get(this.props, 'pageContext.frontmatter.image_gallery.images');
+          console.log('image_gallery -> ', image_gallery)
+        }
         return (
             <Layout {...this.props}>
                 <section id="main" className={'wrapper' + (_.get(this.props, 'pageContext.frontmatter.sidebar.enabled') ? ' sidebar ' + _.get(this.props, 'pageContext.frontmatter.sidebar.side') : '')}>
