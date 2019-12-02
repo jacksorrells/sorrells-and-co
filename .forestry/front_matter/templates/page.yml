@@ -67,6 +67,21 @@ fields:
   config: {}
   label: Gallery
   description: Image gallery for the pages
+- name: image_gallery
+  type: field_group
+  config: {}
+  fields:
+  - name: image_gallery_toggle
+    type: boolean
+    label: Image Gallery Toggle
+    description: Toggle for the displaying of the image gallery
+  - name: image_gallery_upload
+    type: image_gallery
+    config: {}
+    label: Image Gallery Upload
+    description: Image Gallery Multi-Upload
+  label: Image Gallery
+  description: Image Gallery Field Group
 pages:
 - src/pages/badger-ranch.md
 - src/pages/510-collective.md
