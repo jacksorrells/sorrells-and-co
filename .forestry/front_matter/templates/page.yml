@@ -62,11 +62,6 @@ fields:
   default: page
   config:
     required: true
-- name: gallery
-  type: image_gallery
-  config: {}
-  label: Gallery
-  description: Image gallery for the pages
 - name: image_gallery
   type: field_group
   config: {}
