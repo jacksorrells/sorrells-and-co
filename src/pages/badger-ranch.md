@@ -17,8 +17,14 @@ image_gallery:
   - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch11.jpg
   - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch10.jpg
   - https://res.cloudinary.com/jacksorrells/image/upload/v1519183151/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch1.jpg
-  enabled: false
-  images: []
+  enabled: true
+  images:
+  - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch14.jpg
+  - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch13.jpg
+  - https://res.cloudinary.com/jacksorrells/image/upload/v1519183151/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch12.jpg
+  - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch11.jpg
+  - https://res.cloudinary.com/jacksorrells/image/upload/v1519183150/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch10.jpg
+  - https://res.cloudinary.com/jacksorrells/image/upload/v1519183151/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch1.jpg
 
 ---
 Badger Ranch page text description
