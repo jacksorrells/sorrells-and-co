@@ -62,6 +62,11 @@ fields:
   default: page
   config:
     required: true
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
+  description: Image gallery for the community
 pages:
 - src/pages/badger-ranch.md
 - src/pages/510-collective.md
