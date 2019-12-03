@@ -46,7 +46,7 @@ export default class Page extends React.Component {
                             {(show_images && image_gallery) && 
                               <>
                               <p>Let me just see if this guy works.</p>
-                              <Gallery views={images} />
+                              {/* <Gallery views={images} /> */}
                               </>
                             }
                         </div>
