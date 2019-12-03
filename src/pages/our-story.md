@@ -9,6 +9,9 @@ sidebar:
 template: page
 title: Our Story
 subtitle: Our story page subtitle
+image_gallery:
+  enabled: false
+  images: []
 
 ---
 At Sorrells & Company, we master the art of designing and building a new home that addresses our clients’ individual wants, needs and dreams. It’s this Design + Build mindset that is the essence of what differentiates Sorrells & Co. from other builders in Central Texas. Proven processes, systems and efficiencies ensure reduced timelines and no surprises. Transparency of costs associated with your project ensures the lines of communication with clients are always open.
