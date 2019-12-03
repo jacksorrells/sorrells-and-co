@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import {Layout} from '../components/index';
 import {markdownify, Link, toUrl, safePrefix, htmlToReact, getPages} from '../utils';
@@ -43,7 +44,10 @@ export default class Page extends React.Component {
 
 
                             {_.get(this.props, 'pageContext.frontmatter.image_gallery.enabled') && 
-                              <p>Let me just see if this guy works.</p>
+                              <>
+                                <p>Let me just see if this guy works.</p>
+                                <Carousel views={image_gallery} />
+                              </>
                             }
                         </div>
 
