@@ -18,11 +18,11 @@ export default class Page extends React.Component {
           console.log('image_gallery_array -> ', image_gallery_array)
 
 
-          let image_gallery = image_gallery_array.map(image => {
+          let images = image_gallery_array.map(image => {
             return { source: image };
           });
 
-          console.log('image_gallery -> ', image_gallery)
+          console.log('images -> ', images)
 
 
         }
@@ -46,7 +46,7 @@ export default class Page extends React.Component {
                             {(show_images && image_gallery) && 
                               <>
                               <p>Let me just see if this guy works.</p>
-                              <Gallery views={image_gallery} />
+                              <Gallery views={images} />
                               </>
                             }
                         </div>
