@@ -19,7 +19,7 @@ export default class Page extends React.Component {
 
 
           let images = image_gallery_array.map(image => {
-            return { source: image };
+            return { src: image };
           });
 
           console.log('images -> ', images)
