@@ -9,6 +9,9 @@ sidebar:
 template: page
 title: Cloister
 subtitle: Cloister page subtitle
+image_gallery:
+  enabled: false
+  images: []
 
 ---
-Cloister page main text description
+Cloister page main text description update
