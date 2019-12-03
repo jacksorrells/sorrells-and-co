@@ -11,6 +11,7 @@ export default class Page extends React.Component {
         console.log('page')
         console.log('this.props -> ', this.props);
         let show_images = _.get(this.props, 'pageContext.frontmatter.image_gallery.enabled');
+        console.log('show_images -> ', show_images)
         if (show_images) {
           let image_gallery_array = _.get(this.props, 'pageContext.frontmatter.image_gallery.images');
           console.log('image_gallery_array -> ', image_gallery_array)
