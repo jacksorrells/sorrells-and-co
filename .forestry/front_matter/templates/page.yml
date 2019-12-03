@@ -79,6 +79,7 @@ fields:
   label: Image Gallery
   description: Image Gallery Field Group
 pages:
+- src/pages/contact-us.md
 - src/pages/cloister.md
 - src/pages/cameron-heights.md
 - src/pages/badger-ranch.md
@@ -87,5 +88,4 @@ pages:
 - src/pages/our-story.md
 - src/pages/riverside.md
 - src/pages/our-communities.md
-- src/pages/contact-us.md
 - src/pages/our-work.md
