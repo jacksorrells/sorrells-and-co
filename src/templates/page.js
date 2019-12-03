@@ -43,7 +43,7 @@ export default class Page extends React.Component {
                             {htmlToReact(_.get(this.props, 'pageContext.html'))}
 
 
-                            {(show_images && image_gallery) && 
+                            {(show_images && images) && 
                               <>
                               <p>Let me just see if this guy works.</p>
                               <Carousel views={images} />
