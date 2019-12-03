@@ -9,6 +9,9 @@ sidebar:
 template: page
 title: Cameron Heights
 subtitle: Cameron Heights page subtitle
+image_gallery:
+  enabled: false
+  images: []
 
 ---
-Cameron Heights page text description
+Cameron Heights page text description update

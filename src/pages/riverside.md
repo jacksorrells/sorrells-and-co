@@ -9,6 +9,9 @@ sidebar:
 template: page
 title: Riverside
 subtitle: Riverside page subtitle
+image_gallery:
+  enabled: false
+  images: []
 
 ---
-Riverside page text description
+Riverside page text description update
