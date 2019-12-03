@@ -9,6 +9,9 @@ sidebar:
 template: page
 title: Why Us?
 subtitle: Why Us page subtitle
+image_gallery:
+  enabled: false
+  images: []
 
 ---
 ### Transparency / Communication
