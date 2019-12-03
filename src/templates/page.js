@@ -42,7 +42,7 @@ export default class Page extends React.Component {
                             {htmlToReact(_.get(this.props, 'pageContext.html'))}
 
 
-                            {_.get(this.props, 'pageContext.frontmatter.image_gallery.enabled') && 
+                            {show_images && 
                                 <Carousel views={image_gallery} />
                             }
                         </div>
