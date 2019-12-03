@@ -17,7 +17,8 @@ export default class Page extends React.Component {
 
 
           let image_gallery = image_gallery_array.map(image => {
-            return { src: image };
+            let image_obj = { src: image };
+            return image_obj;
           });
 
           console.log('image_gallery -> ', image_gallery)
