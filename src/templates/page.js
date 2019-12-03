@@ -12,8 +12,17 @@ export default class Page extends React.Component {
         console.log('this.props -> ', this.props);
         let show_images = _.get(this.props, 'pageContext.frontmatter.image_gallery.enabled');
         if (show_images) {
-          let image_gallery = _.get(this.props, 'pageContext.frontmatter.image_gallery.images');
+          let image_gallery_array = _.get(this.props, 'pageContext.frontmatter.image_gallery.images');
+          console.log('image_gallery_array -> ', image_gallery_array)
+
+
+          let image_gallery = image_gallery_array.map(image => {
+            return { src: image };
+          });
+
           console.log('image_gallery -> ', image_gallery)
+
+
         }
         return (
             <Layout {...this.props}>
