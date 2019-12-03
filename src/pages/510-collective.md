@@ -10,7 +10,7 @@ template: page
 title: 510 Collective
 subtitle: 510 Collective page subtitle
 image_gallery:
-  enabled: true
+  enabled: false
   images: []
 
 ---

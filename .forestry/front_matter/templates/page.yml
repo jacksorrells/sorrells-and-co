@@ -70,6 +70,7 @@ fields:
     type: boolean
     label: Enable/Disable Gallery
     description: Toggle for the displaying of the image gallery
+    default: false
   - name: images
     type: image_gallery
     config: {}
