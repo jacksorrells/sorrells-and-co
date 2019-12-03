@@ -20,4 +20,4 @@ image_gallery:
   - https://res.cloudinary.com/jacksorrells/image/upload/v1519183151/SorrellsandCo/badger-ranch-popup/SC_Badger_Ranch1.jpg
 
 ---
-Badger Ranch page text description update
+Badger Ranch page text description
