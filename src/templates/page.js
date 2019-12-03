@@ -43,7 +43,7 @@ export default class Page extends React.Component {
                             {htmlToReact(_.get(this.props, 'pageContext.html'))}
 
 
-                            {show_images && 
+                            {(show_images && image_gallery) && 
                               <>
                               <p>Let me just see if this guy works.</p>
                               <Gallery views={image_gallery} />
