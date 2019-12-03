@@ -19,7 +19,7 @@ export default class Page extends React.Component {
 
 
           let image_gallery = image_gallery_array.map(image => {
-            return { src: image };
+            return { source: image };
           });
 
           console.log('image_gallery -> ', image_gallery)
@@ -44,7 +44,9 @@ export default class Page extends React.Component {
 
 
                             {show_images && 
+                              <>
                               <p>Let me just see if this guy works.</p>
+                              </>
                             }
                         </div>
 
