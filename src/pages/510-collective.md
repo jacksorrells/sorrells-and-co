@@ -14,4 +14,4 @@ image_gallery:
   images: []
 
 ---
-510 Collective page text description
+510 Collective page text description update
