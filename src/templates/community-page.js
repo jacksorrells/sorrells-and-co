@@ -51,7 +51,7 @@ export default class Page extends React.Component {
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
               {show_images && (
-                  <p>test</p>
+                  <Carousel views={images} />
               )}
             </div>
 
