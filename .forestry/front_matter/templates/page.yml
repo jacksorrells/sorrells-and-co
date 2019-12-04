@@ -79,8 +79,8 @@ fields:
   label: Image Gallery
   description: Image Gallery Field Group
 pages:
-- src/pages/badger-ranch.md
 - src/pages/510-collective.md
+- src/pages/badger-ranch.md
 - src/pages/why-us.md
 - src/pages/riverside.md
 - src/pages/our-story.md
