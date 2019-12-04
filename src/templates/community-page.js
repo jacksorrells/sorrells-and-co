@@ -6,10 +6,9 @@ import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact, getPages } from '../utils';
 
 export default class Page extends React.Component {
-  render() {
-    let post_list = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'), ['frontmatter.show_in_sidebar', true]), 'frontmatter.date', 'desc');
-    let post_len = _.size(post_list);
-    console.log('community-page')
+  constructor(props) {
+    super(props);
+
     console.log('this.props -> ', this.props);
     let show_images = _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false);
     console.log("show_images -> ", show_images);
@@ -20,12 +19,41 @@ export default class Page extends React.Component {
       let images = image_gallery_array.map(image => {
         return { src: safePrefix(image) };
       });
-
-      console.log("images -> ", images);
-      console.log('images[0] -> ', images[0]);
-      console.log("images[0].src -> ", images[0].src)
-      console.log("safePrefix(_.get(this.props, 'pageContext.frontmatter.image_gallery.images[0]')) -> ", safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]")));
     }
+
+    console.log("images -> ", images);
+    console.log("images[0] -> ", images[0]);
+    console.log("images[0].src -> ", images[0].src);
+
+
+    this.state = {
+      images: images
+    };
+  }
+
+
+  render() {
+    let post_list = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'), ['frontmatter.show_in_sidebar', true]), 'frontmatter.date', 'desc');
+    let post_len = _.size(post_list);
+    console.log('community-page')
+    console.log('this.props -> ', this.props);
+    let show_images = _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false);
+    console.log("show_images -> ", show_images);
+    console.log('this.state -> ', this.state);
+    
+    // if (show_images) {
+    //   let image_gallery_array = _.get(this.props, "pageContext.frontmatter.image_gallery.images");
+    //   console.log("image_gallery_array -> ", image_gallery_array);
+
+    //   let images = image_gallery_array.map(image => {
+    //     return { src: safePrefix(image) };
+    //   });
+
+    //   console.log("images -> ", images);
+    //   console.log('images[0] -> ', images[0]);
+    //   console.log("images[0].src -> ", images[0].src)
+    //   console.log("safePrefix(_.get(this.props, 'pageContext.frontmatter.image_gallery.images[0]')) -> ", safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]")));
+    // }
     return (
       <Layout {...this.props}>
         <section
@@ -46,22 +74,8 @@ export default class Page extends React.Component {
               )}
             </header>
             <div className="content">
-              {_.get(
-                this.props,
-                "pageContext.frontmatter.content_img.enabled"
-              ) && (
-                <Link
-                  to={safePrefix(
-                    toUrl(
-                      this.props.pageContext.pages,
-                      _.get(
-                        this.props,
-                        "pageContext.frontmatter.content_img.url"
-                      )
-                    )
-                  )}
-                  className="image fit"
-                >
+              {_.get(this.props, "pageContext.frontmatter.content_img.enabled") && (
+                <Link to={safePrefix(toUrl(this.props.pageContext.pages, _.get(this.props, "pageContext.frontmatter.content_img.url")))} className="image fit">
                   <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.content_img.path"))} alt="" />
                 </Link>
               )}
@@ -70,7 +84,7 @@ export default class Page extends React.Component {
               {show_images && (
                 <>
                   <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]"))} alt="" />
-                  <img src={safePrefix(images[0].src)} alt="" />
+                  {/* <img src={safePrefix(images[0].src)} alt="" /> */}
                   <p>test</p>
                 </>
               )}
@@ -78,29 +92,13 @@ export default class Page extends React.Component {
 
             {_.get(this.props, "pageContext.frontmatter.sidebar.enabled") && (
               <div className="sidebar">
-                {_.map(
-                  _.orderBy(
-                    _.filter(getPages(this.props.pageContext.pages, "/posts"), [
-                      "frontmatter.show_in_sidebar",
-                      true
-                    ]),
-                    "frontmatter.date",
-                    "desc"
-                  ),
+                {_.map(_.orderBy(_.filter(getPages(this.props.pageContext.pages, "/posts"), ["frontmatter.show_in_sidebar", true]), "frontmatter.date", "desc"),
                   (post, post_idx) => (
                     <React.Fragment key={post_idx}>
                       <section key={post_idx}>
                         {_.get(post, "frontmatter.alt_img") && (
-                          <Link
-                            to={safePrefix(_.get(post, "url"))}
-                            className="image fit"
-                          >
-                            <img
-                              src={safePrefix(
-                                _.get(post, "frontmatter.alt_img")
-                              )}
-                              alt=""
-                            />
+                          <Link to={safePrefix(_.get(post, "url"))} className="image fit">
+                            <img src={safePrefix(_.get(post, "frontmatter.alt_img"))} alt="" />
                           </Link>
                         )}
                         <h3>{_.get(post, "frontmatter.title")}</h3>
@@ -108,10 +106,7 @@ export default class Page extends React.Component {
                         <footer>
                           <ul className="actions">
                             <li>
-                              <Link
-                                to={safePrefix(_.get(post, "url"))}
-                                className="button"
-                              >
+                              <Link to={safePrefix(_.get(post, "url"))} className="button">
                                 Learn More
                               </Link>
                             </li>
