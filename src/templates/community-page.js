@@ -69,12 +69,7 @@ export default class Page extends React.Component {
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
               {this.state.show_images && (
-                <>
-                  <Carousel views={this.state.images} />
-                  <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]"))} alt="" />
-                  <img src={safePrefix(this.state.images[0].src)} alt="" />
-                  <p>test</p>
-                </>
+                <Carousel views={this.state.images} />
               )}
             </div>
 
