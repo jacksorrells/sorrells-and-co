@@ -58,7 +58,7 @@ export default class Page extends React.Component {
 
                   <ModalGateway>
                     {modalIsOpen && (
-                      <Modal onClose={this.toggleModal}>
+                      <Modal >
                         <Carousel views={this.state.images} />
                       </Modal>
                     )}
