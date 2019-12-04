@@ -22,6 +22,8 @@ export default class Page extends React.Component {
       });
 
       console.log("images -> ", images);
+      console.log('images[0] -> ', images[0]);
+      console.log("images[0].src -> ", images[0].src)
     }
     return (
       <Layout {...this.props}>
@@ -74,7 +76,7 @@ export default class Page extends React.Component {
 
               {show_images && (
                 <>
-                  <img src={safePrefix(images[0].src)} alt="" />
+                  <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]"))} alt="" />
                   <p>test</p>
                 </>
               )}
