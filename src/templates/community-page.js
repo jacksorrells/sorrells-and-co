@@ -22,6 +22,7 @@ export default class Page extends React.Component {
   }
 
   toggleModal = () => {
+    console.log('toggleModal')
     this.setState(state => ({ modalIsOpen: !state.modalIsOpen }))
   }
 
@@ -51,7 +52,7 @@ export default class Page extends React.Component {
                 <>
                   <button 
                     className="button primary" 
-                    // onClick={this.toggleModal} 
+                    onClick={this.toggleModal} 
                   >
                     Show Modal
                   </button>
