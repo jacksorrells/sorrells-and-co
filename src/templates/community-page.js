@@ -28,7 +28,8 @@ export default class Page extends React.Component {
 
 
     this.state = {
-      images: images
+      images: images,
+      show_images: show_images
     };
   }
 
@@ -38,23 +39,8 @@ export default class Page extends React.Component {
     let post_len = _.size(post_list);
     console.log('community-page')
     console.log('this.props -> ', this.props);
-    let show_images = _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false);
-    console.log("show_images -> ", show_images);
     console.log('this.state -> ', this.state);
     
-    // if (show_images) {
-    //   let image_gallery_array = _.get(this.props, "pageContext.frontmatter.image_gallery.images");
-    //   console.log("image_gallery_array -> ", image_gallery_array);
-
-    //   let images = image_gallery_array.map(image => {
-    //     return { src: safePrefix(image) };
-    //   });
-
-    //   console.log("images -> ", images);
-    //   console.log('images[0] -> ', images[0]);
-    //   console.log("images[0].src -> ", images[0].src)
-    //   console.log("safePrefix(_.get(this.props, 'pageContext.frontmatter.image_gallery.images[0]')) -> ", safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]")));
-    // }
     return (
       <Layout {...this.props}>
         <section
@@ -82,7 +68,7 @@ export default class Page extends React.Component {
               )}
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
-              {show_images && (
+              {this.state.show_images && (
                 <>
                   <Carousel views={this.state.images} />
                   <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]"))} alt="" />
