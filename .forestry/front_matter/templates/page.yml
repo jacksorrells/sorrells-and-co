@@ -55,6 +55,7 @@ fields:
       options:
       - left
       - right
+  hidden: true
 - type: text
   name: template
   label: Template
