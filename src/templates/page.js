@@ -43,9 +43,11 @@ export default class Page extends React.Component {
                             {htmlToReact(_.get(this.props, 'pageContext.html'))}
 
 
-                            {(show_images) && 
+                            {(show_images) && (
+                              <>
                               <p>Let me just see if this guy works.</p>
-                            }
+                              </>
+                            )}
                         </div>
 
                         {/* Can I remove all of this sidebar? */}
