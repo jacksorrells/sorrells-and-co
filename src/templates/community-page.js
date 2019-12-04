@@ -51,7 +51,7 @@ export default class Page extends React.Component {
                 <>
                   <button 
                     className="button primary" 
-                    onClick={this.toggleModal} 
+                    // onClick={this.toggleModal} 
                   >
                     Show Modal
                   </button>
