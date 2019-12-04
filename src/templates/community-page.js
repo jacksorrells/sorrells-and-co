@@ -8,25 +8,12 @@ import { markdownify, Link, toUrl, safePrefix, htmlToReact, getPages } from '../
 export default class Page extends React.Component {
   constructor(props) {
     super(props);
-
-    console.log('this.props -> ', this.props);
-    let show_images = _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false);
-    console.log("show_images -> ", show_images);
-    let images;
+    let show_images = _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false), images;
     if (show_images) {
-      let image_gallery_array = _.get(this.props, "pageContext.frontmatter.image_gallery.images");
-      console.log("image_gallery_array -> ", image_gallery_array);
-
-      images = image_gallery_array.map(image => {
+      images = _.get(this.props, "pageContext.frontmatter.image_gallery.images").map(image => {
         return { src: safePrefix(image) };
       });
     }
-
-    console.log("images -> ", images);
-    console.log("images[0] -> ", images[0]);
-    console.log("images[0].src -> ", images[0].src);
-
-
     this.state = {
       images: images,
       show_images: show_images
