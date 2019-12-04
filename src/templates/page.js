@@ -42,7 +42,7 @@ export default class Page extends React.Component {
               }
               {htmlToReact(_.get(this.props, 'pageContext.html'))}
 
-              {(show_images) && (
+              {this.state.show_images && (
                 <>
                   <button className="button primary" onClick={this.toggleModal}>
                     Show Modal
