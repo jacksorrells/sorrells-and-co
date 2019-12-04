@@ -12,11 +12,12 @@ export default class Page extends React.Component {
     console.log('this.props -> ', this.props);
     let show_images = _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false);
     console.log("show_images -> ", show_images);
+    let images;
     if (show_images) {
       let image_gallery_array = _.get(this.props, "pageContext.frontmatter.image_gallery.images");
       console.log("image_gallery_array -> ", image_gallery_array);
 
-      let images = image_gallery_array.map(image => {
+      images = image_gallery_array.map(image => {
         return { src: safePrefix(image) };
       });
     }
