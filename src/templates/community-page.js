@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import Carousel from 'react-images';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact, getPages } from '../utils';
@@ -16,8 +16,13 @@ export default class Page extends React.Component {
     }
     this.state = {
       images: images,
-      show_images: show_images
+      show_images: show_images,
+      modalIsOpen: false
     };
+  }
+
+  toggleModal = () => {
+    this.setState(state => ({ modalIsOpen: !state.modalIsOpen }))
   }
 
 
@@ -46,7 +51,22 @@ export default class Page extends React.Component {
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
               {this.state.show_images && (
-                <Carousel views={this.state.images} />
+                <>
+                  <button 
+                    className="button primary" 
+                    onClick={toggleModal} 
+                  >
+                    Show Modal
+                  </button>
+
+                  <ModalGateway>
+                    {modalIsOpen && (
+                      <Modal onClose={this.toggleModal}>
+                        <Carousel views={this.state.images} />
+                      </Modal>
+                    )}
+                  </ModalGateway>
+                </>
               )}
             </div>
           </div>
