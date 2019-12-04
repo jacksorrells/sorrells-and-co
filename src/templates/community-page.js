@@ -76,7 +76,7 @@ export default class Page extends React.Component {
                 <React.Fragment>
                   <p>Let me just see if this guy works.</p>
                   <Carousel views={images} />
-                <React.Fragment/>
+                </React.Fragment>
               )}
             </div>
 
