@@ -74,7 +74,7 @@ export default class Page extends React.Component {
 
               {show_images && (
                 <>
-                  <img src={safePrefix(images[0])} alt="" />
+                  <img src={safePrefix(images[0].src)} alt="" />
                   <p>test</p>
                 </>
               )}
