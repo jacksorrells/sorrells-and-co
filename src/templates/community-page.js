@@ -27,8 +27,11 @@ export default class Page extends React.Component {
       <Layout {...this.props}>
         <section
           id="main"
-          className={"wrapper" + (_.get(this.props, "pageContext.frontmatter.sidebar.enabled")
-              ? " sidebar " + _.get(this.props, "pageContext.frontmatter.sidebar.side")
+          className={
+            "wrapper" +
+            (_.get(this.props, "pageContext.frontmatter.sidebar.enabled")
+              ? " sidebar " +
+                _.get(this.props, "pageContext.frontmatter.sidebar.side")
               : "")
           }
         >
@@ -40,18 +43,40 @@ export default class Page extends React.Component {
               )}
             </header>
             <div className="content">
-              {_.get(this.props, "pageContext.frontmatter.content_img.enabled") && (
+              {_.get(
+                this.props,
+                "pageContext.frontmatter.content_img.enabled"
+              ) && (
                 <Link
-                  to={safePrefix(toUrl(this.props.pageContext.pages, _.get(this.props, "pageContext.frontmatter.content_img.url")))}
+                  to={safePrefix(
+                    toUrl(
+                      this.props.pageContext.pages,
+                      _.get(
+                        this.props,
+                        "pageContext.frontmatter.content_img.url"
+                      )
+                    )
+                  )}
                   className="image fit"
                 >
-                  <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.content_img.path"))} alt="" />
+                  <img
+                    src={safePrefix(
+                      _.get(
+                        this.props,
+                        "pageContext.frontmatter.content_img.path"
+                      )
+                    )}
+                    alt=""
+                  />
                 </Link>
               )}
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
               {show_images && (
+                <>
+                  <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.image_gallery.images[0]"))} alt="" />
                   <p>test</p>
+                </>
               )}
             </div>
 
