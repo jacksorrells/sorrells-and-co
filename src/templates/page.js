@@ -44,10 +44,7 @@ export default class Page extends React.Component {
 
 
                             {(show_images) && 
-                              <>
                               <p>Let me just see if this guy works.</p>
-                              <Carousel views={images} />
-                              </>
                             }
                         </div>
 
