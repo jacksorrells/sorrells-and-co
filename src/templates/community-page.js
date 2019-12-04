@@ -25,7 +25,6 @@ export default class Page extends React.Component {
     this.setState(state => ({ modalIsOpen: !state.modalIsOpen }))
   }
 
-
   render() {
     console.log('community-page')
     console.log('this.props -> ', this.props);
@@ -38,9 +37,7 @@ export default class Page extends React.Component {
           <div className="inner">
             <header className="major">
               <h2>{_.get(this.props, "pageContext.frontmatter.title")}</h2>
-              {markdownify(
-                _.get(this.props, "pageContext.frontmatter.subtitle")
-              )}
+              {markdownify(_.get(this.props, "pageContext.frontmatter.subtitle"))}
             </header>
             <div className="content">
               {_.get(this.props, "pageContext.frontmatter.content_img.enabled") && (
