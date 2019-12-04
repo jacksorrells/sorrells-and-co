@@ -22,7 +22,6 @@ export default class Page extends React.Component {
   }
 
   toggleModal = () => {
-    console.log('toggleModal')
     this.setState(state => ({ modalIsOpen: !state.modalIsOpen }))
   }
 
