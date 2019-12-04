@@ -56,13 +56,13 @@ export default class Page extends React.Component {
                     Show Modal
                   </button>
 
-                  <ModalGateway>
+                  {/* <ModalGateway>
                     {modalIsOpen && (
                       <Modal >
                         <Carousel views={this.state.images} />
                       </Modal>
                     )}
-                  </ModalGateway>
+                  </ModalGateway> */}
                 </>
               )}
             </div>
