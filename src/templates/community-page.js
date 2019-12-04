@@ -18,7 +18,7 @@ export default class Page extends React.Component {
       console.log("image_gallery_array -> ", image_gallery_array);
 
       let images = image_gallery_array.map(image => {
-        return { src: safePrefix(toUrl(image)) };
+        return { src: safePrefix(image) };
       });
 
       console.log("images -> ", images);
