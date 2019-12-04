@@ -31,51 +31,19 @@ export default class Page extends React.Component {
     console.log('this.state -> ', this.state)
     return (
       <Layout {...this.props}>
-        <section
-          id="main"
-          className={
-            "wrapper" +
-            (_.get(this.props, "pageContext.frontmatter.sidebar.enabled")
-              ? " sidebar " +
-                _.get(this.props, "pageContext.frontmatter.sidebar.side")
-              : "")
-          }
+        <section id="main" className={"wrapper" + (_.get(this.props, "pageContext.frontmatter.sidebar.enabled") ? " sidebar " + _.get(this.props, "pageContext.frontmatter.sidebar.side") : "")}
         >
           <div className="inner">
             <header className="major">
               <h2>{_.get(this.props, "pageContext.frontmatter.title")}</h2>
-              {markdownify(
-                _.get(this.props, "pageContext.frontmatter.subtitle")
-              )}
+              {markdownify(_.get(this.props, "pageContext.frontmatter.subtitle"))}
             </header>
 
             {/* Freeform content */}
             <div className="content">
-              {_.get(
-                this.props,
-                "pageContext.frontmatter.content_img.enabled"
-              ) && (
-                <Link
-                  to={safePrefix(
-                    toUrl(
-                      this.props.pageContext.pages,
-                      _.get(
-                        this.props,
-                        "pageContext.frontmatter.content_img.url"
-                      )
-                    )
-                  )}
-                  className="image fit"
-                >
-                  <img
-                    src={safePrefix(
-                      _.get(
-                        this.props,
-                        "pageContext.frontmatter.content_img.path"
-                      )
-                    )}
-                    alt=""
-                  />
+              {_.get(this.props, "pageContext.frontmatter.content_img.enabled") && (
+                <Link to={safePrefix(toUrl(this.props.pageContext.pages, _.get(this.props, "pageContext.frontmatter.content_img.url")))} className="image fit">
+                  <img src={safePrefix(_.get(this.props, "pageContext.frontmatter.content_img.path"))} alt="" />
                 </Link>
               )}
               {htmlToReact(_.get(this.props, "pageContext.html"))}
