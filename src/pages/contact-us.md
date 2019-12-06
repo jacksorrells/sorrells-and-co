@@ -6,7 +6,7 @@ content_img:
 sidebar:
   side: left
   enabled: false
-template: page
+template: contact
 title: Contact Us
 subtitle: Contact Us page subtitle
 image_gallery:

@@ -80,13 +80,13 @@ fields:
   label: Image Gallery
   description: Image Gallery Field Group
 pages:
-- src/pages/cameron-heights.md
-- src/pages/510-collective.md
-- src/pages/badger-ranch.md
-- src/pages/why-us.md
-- src/pages/riverside.md
-- src/pages/our-story.md
 - src/pages/our-communities.md
-- src/pages/contact-us.md
-- src/pages/cloister.md
+- src/pages/riverside.md
 - src/pages/our-work.md
+- src/pages/why-us.md
+- src/pages/cloister.md
+- src/pages/our-story.md
+- src/pages/contact-us.md
+- src/pages/cameron-heights.md
+- src/pages/badger-ranch.md
+- src/pages/510-collective.md
