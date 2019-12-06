@@ -3,12 +3,11 @@ import _ from 'lodash';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import {Layout} from '../components/index';
-import {markdownify, Link, toUrl, safePrefix, htmlToReact, getPages} from '../utils';
+import {markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
 
 export default class Page extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       images: _.get(this.props, "pageContext.frontmatter.image_gallery.images", []).map(image => {
         return { src: safePrefix(image)} 

@@ -3,20 +3,16 @@ import _ from 'lodash';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import { Layout } from '../components/index';
-import { markdownify, Link, toUrl, safePrefix, htmlToReact, getPages } from '../utils';
+import { markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
 
-export default class Page extends React.Component {
+export default class CommunityPage extends React.Component {
   constructor(props) {
     super(props);
-    let show_images = _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false), images;
-    if (show_images) {
-      images = _.get(this.props, "pageContext.frontmatter.image_gallery.images").map(image => {
-        return { src: safePrefix(image) };
-      });
-    }
     this.state = {
-      images: images,
-      show_images: show_images,
+      images: _.get(this.props, "pageContext.frontmatter.image_gallery.images", []).map(image => {
+        return { src: safePrefix(image)} 
+      }),
+      show_images: _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false), images,
       modalIsOpen: false
     };
   }
