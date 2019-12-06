@@ -5,7 +5,7 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
 
-export default class CommunityPage extends React.Component {
+export default class Page extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
