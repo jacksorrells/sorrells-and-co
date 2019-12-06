@@ -6,7 +6,7 @@ content_img:
 sidebar:
   side: left
   enabled: false
-template: page
+template: elements
 title: Cloister
 subtitle: Cloister page subtitle
 image_gallery:
