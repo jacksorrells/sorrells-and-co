@@ -8,10 +8,9 @@ sidebar:
   enabled: false
 template: contact
 title: Contact Us
-subtitle: Contact Us page subtitle
+subtitle: Drop us a line!
 image_gallery:
   enabled: false
   images: []
 
 ---
-Contact us page text description
