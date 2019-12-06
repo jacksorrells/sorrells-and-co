@@ -24,25 +24,23 @@ export default class Contact extends React.Component {
               )}
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
-              <div className="row gtr-uniform gtr-50">
-                <form name="contact" method="POST" data-netlify="true">
-                  <div className="col-12">
-                    <input type="text" name="name" id="name" value="" placeholder="Name" />
-                  </div>
-                  <div className="col-12">
-                    <input type="email" name="email" id="email" value="" placeholder="Email" />
-                  </div>
-                  <div className="col-12">
-                    <input type="text" name="phone" id="phone" value="" placeholder="Phone" />
-                  </div>
-                  <div className="col-12">
-                    <textarea name="message" id="message" placeholder="Message" rows="4" />
-                  </div>
-                  <div className="col-12">
-                    <button type="Submit" className="primary button fit">Send Message</button>
-                  </div>
-                </form>
-              </div>
+              <form name="contact" method="POST" data-netlify="true">
+                <div className="col-12">
+                  <input type="text" name="name" id="name" value="" placeholder="Name" />
+                </div>
+                <div className="col-12">
+                  <input type="email" name="email" id="email" value="" placeholder="Email" />
+                </div>
+                <div className="col-12">
+                  <input type="text" name="phone" id="phone" value="" placeholder="Phone" />
+                </div>
+                <div className="col-12">
+                  <textarea name="message" id="message" placeholder="Message" rows="4" />
+                </div>
+                <div className="col-12">
+                  <button type="Submit" className="primary button fit">Send Message</button>
+                </div>
+              </form>
 
             </div>
           </div>
