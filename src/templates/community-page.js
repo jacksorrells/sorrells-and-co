@@ -10,7 +10,7 @@ export default class CommunityPage extends React.Component {
     super(props);
     this.state = {
       images: _.get(this.props, "pageContext.frontmatter.image_gallery.images", []).map(image => {
-        return { src: safePrefix(image)} 
+        return { src: safePrefix(_.get(this.props, "pageContext.site.siteMetadata.cloudinaryUrl") + "/" + image)} 
       }),
       show_images: _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false),
       modalIsOpen: false
