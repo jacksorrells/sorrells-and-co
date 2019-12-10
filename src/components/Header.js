@@ -16,7 +16,7 @@ export default class Header extends React.Component {
       <header id="header" className={classNames({'alt': _.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')})}>
         <h1 id="logo">
           <Link to={_.get(this.props, 'pageContext.site.pathPrefix') || '/'}>
-            <img src={_.get(this.props, 'pageContext.site.siteMetadata.logo')} />
+            <img src={_.get(this.props, 'pageContext.site.siteMetadata.logo')} alt={_.get(this.props, 'pageContext.site.siteMetadata.title')} />
           </Link>
         </h1>
         <nav id="nav">

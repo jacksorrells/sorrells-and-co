@@ -1,0 +1,1 @@
+export const cloudinary_url = "https://res.cloudinary.com/jacksorrells/image/upload/";
