@@ -56,7 +56,7 @@ export default class Contact extends React.Component {
               )}
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
-              <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
+              <form name="contact" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="hidden" type="hidden">
                   <label>Don't fill this out if you're human: <input name="bot-field" /></label>
@@ -73,9 +73,6 @@ export default class Contact extends React.Component {
                 </div>
                 <div className="col-12">
                   <textarea name="message" id="message" placeholder="Message" rows="4" value={this.state.message} onChange={this.handleChange} />
-                </div>
-                <div className="col-12">
-                  <div data-netlify-recaptcha="true"></div>
                 </div>
                 <div className="col-12">
                   <button type="submit" className="primary button fit">Send Message</button>
