@@ -5,6 +5,16 @@ import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
 
 export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state={
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    }
+  }
+
   render() {
     return (
       <Layout {...this.props}>
@@ -24,9 +34,9 @@ export default class Contact extends React.Component {
               )}
               {htmlToReact(_.get(this.props, "pageContext.html"))}
 
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
                 <div className="col-12">
-                  <input type="text" name="name" id="name" value="" placeholder="Name" />
+                  <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div className="col-12">
                   <input type="email" name="email" id="email" value="" placeholder="Email" />
