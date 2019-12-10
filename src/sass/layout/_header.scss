@@ -41,13 +41,20 @@
 			display: inline-block;
 			height: inherit;
 			line-height: inherit;
-			margin-left: 1.5em;
+      margin-left: 1.5em;
+      max-width: 20vw;
 
 			a {
-				display: inline-block;
+        display: flex;
+        align-content: center;
 				font-size: 0.9em;
 				height: inherit;
-				line-height: inherit;
+        line-height: inherit;
+        
+        img {
+          max-width: 100%;
+          object-fit: contain;
+        }
 			}
 		}
 
@@ -126,10 +133,6 @@
 			height: 5em;
 			line-height: 5em;
 			position: absolute;
-
-			h1 {
-				margin-left: 2.5em;
-			}
 
 			nav {
 				margin-right: 2.5em;
