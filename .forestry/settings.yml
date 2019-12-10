@@ -47,8 +47,8 @@ sections:
 upload_dir: SorrellsandCo
 public_path: https://res.cloudinary.com/jacksorrells/image/upload
 front_matter_path: ''
-use_front_matter_path: 
-file_template: ":filename:"
+use_front_matter_path: true
+file_template: 'https://res.cloudinary.com/jacksorrells/image/upload/:filename:'
 build:
   preview_output_directory: public
   install_dependencies_command: npm install
