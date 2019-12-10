@@ -39,10 +39,10 @@ export default class Contact extends React.Component {
                   <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div className="col-12">
-                  <input type="email" name="email" id="email" value="" placeholder="Email" />
+                  <input type="email" name="email" id="email" placeholder="Email" />
                 </div>
                 <div className="col-12">
-                  <input type="text" name="phone" id="phone" value="" placeholder="Phone" />
+                  <input type="text" name="phone" id="phone" placeholder="Phone" />
                 </div>
                 <div className="col-12">
                   <textarea name="message" id="message" placeholder="Message" rows="4" />
