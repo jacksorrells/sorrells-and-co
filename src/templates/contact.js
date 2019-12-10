@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
-import { encode } from 'punycode';
 
 const encode = (data) => {
   return Object.keys(data)
