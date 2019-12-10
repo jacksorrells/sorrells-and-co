@@ -8,7 +8,9 @@ sidebar:
   enabled: false
 template: contact
 title: Contact Us
-subtitle: Drop us a line!
+subtitle: For all inquiries including new business, employment opportunities or to
+  hear more about our services, please get in touch. We'd love to help you with your
+  new awesome project.
 image_gallery:
   enabled: false
   images: []
