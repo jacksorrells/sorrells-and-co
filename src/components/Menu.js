@@ -5,9 +5,12 @@ import {Link, safePrefix, classNames} from '../utils';
 
 export default class Menu extends React.Component {
 
-  console.log('this.props -> ', this.props);
+  
 
   render() {
+
+    console.log('this.props -> ', this.props);
+
     return (
       <ul>
         {_.map(_.get(this.props, 'menu'), (item, item_idx) => {
