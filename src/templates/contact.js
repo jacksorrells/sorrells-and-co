@@ -30,7 +30,7 @@ export default class Contact extends React.Component {
 
               <form name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
                 <div className="col-12">
-                  <input type="text" name="name" id="name" placeholder="Name" value={name} />
+                  <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div className="col-12">
                   <input type="email" name="email" id="email" placeholder="Email" />
