@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
-import {classNames, Link, cloudinary_url} from '../utils';
+import {classNames, Link} from '../utils';
 import Menu from './Menu';
 
 export default class Header extends React.Component {
@@ -10,7 +10,6 @@ export default class Header extends React.Component {
     console.log('this.props -> ', this.props);
     console.log('this.props.pageContext.site.siteMetadata -> ', this.props.pageContext.site.siteMetadata);
     console.log('this.props.pageContext.site.siteMetadata.logo -> ', this.props.pageContext.site.siteMetadata.logo);
-    console.log('cloudinary_url -> ', cloudinary_url);
 
     let menu = _.get(this.props, 'pageContext.menus.main');
     return (
