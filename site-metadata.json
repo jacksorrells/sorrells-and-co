@@ -22,5 +22,6 @@
       }
     }
   },
-  "logo": "/v1516822841/SorrellsandCo/logos/S_Co_Logo_White.png"
+  "logo": "/v1516822841/SorrellsandCo/logos/S_Co_Logo_White.png",
+  "cloudinaryUrl": "https://res.cloudinary.com/jacksorrells/image/upload/"
 }
