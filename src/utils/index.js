@@ -8,4 +8,4 @@ export { default as markdownify } from './markdownify';
 export { default as safePrefix } from './safePrefix';
 export { default as toStyleObj } from './toStyleObj';
 export { default as Link } from './link';
-export { default as cloudinary_url } from './cloudinary';
+export { cloudinary_url } from './cloudinary';
