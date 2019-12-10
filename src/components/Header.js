@@ -10,6 +10,7 @@ export default class Header extends React.Component {
     console.log('this.props -> ', this.props);
     console.log('this.props.pageContext.site.siteMetadata -> ', this.props.pageContext.site.siteMetadata);
     console.log('this.props.pageContext.site.siteMetadata.logo -> ', this.props.pageContext.site.siteMetadata.logo);
+    console.log('this.props.pageContext.site.siteMetadata.cloudinaryUrl -> ', this.props.pageContext.site.siteMetadata.cloudinaryUrl);
 
     let menu = _.get(this.props, 'pageContext.menus.main');
     return (
