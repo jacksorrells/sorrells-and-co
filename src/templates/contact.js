@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import _ from 'lodash';
 
 import { Layout } from '../components/index';
@@ -9,8 +9,6 @@ const encode = (data) => {
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
-
-const [name, setName] = useState("");
 
 export default class Contact extends React.Component {
   constructor(props){
