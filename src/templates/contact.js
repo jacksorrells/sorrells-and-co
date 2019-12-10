@@ -5,10 +5,9 @@ import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
 
 export default class Contact extends React.Component {
-
+  const [name, setName] = useState('');
 
   render() {
-    const [name, setName] = useState('');
 
     return (
       <Layout {...this.props}>
