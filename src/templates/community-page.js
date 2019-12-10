@@ -25,6 +25,7 @@ export default class CommunityPage extends React.Component {
     console.log('community-page')
     console.log('this.props -> ', this.props);
     console.log('this.state -> ', this.state);
+    console.log("this.props.pageContext.site.siteMetadata.cloudinaryUrl -> ", this.props.pageContext.site.siteMetadata.cloudinaryUrl);
     return (
       <Layout {...this.props}>
         <section id="main" className="wrapper">

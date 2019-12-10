@@ -6,12 +6,6 @@ import Menu from './Menu';
 
 export default class Header extends React.Component {
   render() {
-
-    console.log('this.props -> ', this.props);
-    console.log('this.props.pageContext.site.siteMetadata -> ', this.props.pageContext.site.siteMetadata);
-    console.log('this.props.pageContext.site.siteMetadata.logo -> ', this.props.pageContext.site.siteMetadata.logo);
-    console.log('this.props.pageContext.site.siteMetadata.cloudinaryUrl -> ', this.props.pageContext.site.siteMetadata.cloudinaryUrl);
-
     let menu = _.get(this.props, 'pageContext.menus.main');
     return (
       <header id="header" className={classNames({'alt': _.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')})}>
