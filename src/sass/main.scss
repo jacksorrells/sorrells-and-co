@@ -200,4 +200,8 @@ $palette: (
 	@import 'layout/navPanel';
 
 //Stackbit Banner
-	@import 'imports/banner';
+  @import 'imports/banner';
+  
+
+//Utilities
+.hidden{display: none;}
