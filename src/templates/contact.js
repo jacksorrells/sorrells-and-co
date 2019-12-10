@@ -33,9 +33,7 @@ export default class Contact extends React.Component {
     e.preventDefault();
   }
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  }
+  handleChange = e => { this.setState({ [e.target.name]: e.target.value });}
 
 
   render() {
@@ -60,9 +58,16 @@ export default class Contact extends React.Component {
 
               <form name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
+                <div className="hidden">
+                  <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </div>
 
+                <div className="col-12">
                   <input type="text" name="name" id="name" placeholder="Name" value={this.state.name} onChange={this.handleChange} />
+                </div>
+                <div className="col-12">
                   <input type="email" name="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} />
+                </div>
                 <div className="col-12">
                   <input type="text" name="phone" id="phone" placeholder="Phone" value={this.state.phone} onChange={this.handleChange} />
                 </div>
