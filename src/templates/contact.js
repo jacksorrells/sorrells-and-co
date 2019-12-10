@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import _ from 'lodash';
 
 import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
 
 export default class Contact extends React.Component {
-  
+
 
   render() {
+    const [name, setName] = useState('');
+
     return (
       <Layout {...this.props}>
         <section id="main" className="wrapper">
@@ -28,7 +30,7 @@ export default class Contact extends React.Component {
 
               <form name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
                 <div className="col-12">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input type="text" name="name" id="name" placeholder="Name" value={name} />
                 </div>
                 <div className="col-12">
                   <input type="email" name="email" id="email" placeholder="Email" />
