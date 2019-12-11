@@ -14,6 +14,7 @@ export default function HTML(props) {
         </noscript>
         <div
           key={`body`}
+          className="gatsbyContent"
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
