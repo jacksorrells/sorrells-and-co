@@ -196,9 +196,7 @@
 			line-height: 2.95em;
 
 			h1 {
-				&:before {
-					font-size: 0.8em;
-				}
+        max-width: 40vw;
 			}
 		}
 
@@ -214,7 +212,8 @@
 			line-height: 2.95em !important;
 
 			h1 {
-				margin-left: 1.25em !important;
+        margin-left: 1.25em !important;
+        max-width: 40vw
 			}
 
 			nav {
