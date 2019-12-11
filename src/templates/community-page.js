@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import Carousel, { Modal, ModalGateway } from 'react-images';
+import Gallery from 'react-photo-gallery';
 
 import { Layout } from '../components/index';
 import { markdownify, Link, toUrl, safePrefix, htmlToReact } from '../utils';
@@ -10,7 +11,11 @@ export default class CommunityPage extends React.Component {
     super(props);
     this.state = {
       images: _.get(this.props, "pageContext.frontmatter.image_gallery.images", []).map(image => {
-        return { src: safePrefix(_.get(this.props, "pageContext.site.siteMetadata.cloudinaryUrl") + "/c_scale,w_auto,dpr_auto,q_auto,f_auto/" + image)} 
+        return { 
+          src: safePrefix(_.get(this.props, "pageContext.site.siteMetadata.cloudinaryUrl") + "/c_scale,w_auto,dpr_auto,q_auto,f_auto/" + image),
+          height: 1,
+          width: 1
+        } 
       }),
       show_images: _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false),
       modalIsOpen: false
@@ -44,6 +49,8 @@ export default class CommunityPage extends React.Component {
 
               {this.state.show_images && (
                 <>
+                  <Gallery photos={this.state.images} />
+
                   <button 
                     className="button primary" 
                     onClick={this.toggleModal} 
