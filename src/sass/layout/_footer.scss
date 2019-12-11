@@ -11,9 +11,6 @@
 		@include color-typography(accent4);
 		@include color-button(accent4);
     @include color-section(accent4);
-    width: 100%;
-    bottom: 0;
-
 
 		.content {
 			@include padding(3em, 0);
