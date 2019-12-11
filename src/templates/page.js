@@ -10,7 +10,7 @@ export default class Page extends React.Component {
     super(props);
     this.state = {
       images: _.get(this.props, "pageContext.frontmatter.image_gallery.images", []).map(image => {
-        return { src: safePrefix(image)} 
+        return { src: safePrefix(_.get(this.props, 'pageContext.site.siteMetadata.cloudinaryUrl') + "/" + image)} 
       }),
       show_images: _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false),
       modalIsOpen: false
@@ -25,6 +25,7 @@ export default class Page extends React.Component {
     console.log('page')
     console.log('this.props -> ', this.props);
     console.log('this.state -> ', this.state);
+    console.log('this.props.pageContext.site.siteMetadata.cloudinaryUrl -> ', this.props.pageContext.site.siteMetadata.cloudinaryUrl);
     return (
       <Layout {...this.props}>
         <section id="main" className="wrapper">
