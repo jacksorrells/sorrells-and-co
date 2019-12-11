@@ -206,12 +206,20 @@
 			h1 {
         max-width: 30vw;
 			}
-		}
+    
+      nav {
+				display: none;
+			}
+
+			.navPanelToggle {
+				display: block;
+			}
+    }
 
 		.dropotron {
 			min-width: 11em;
 			padding: 0.5em;
-		}
+    }
 	}
 
 	@include breakpoint('<=small') {
