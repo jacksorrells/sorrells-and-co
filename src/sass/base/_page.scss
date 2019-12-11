@@ -34,7 +34,15 @@
 		}
 
 	body {
-		background: _palette(bg);
+    background: _palette(bg);
+    
+    .gatsbyContent{
+      height: 100%;
+
+      div {
+        height: 100%;
+      }
+    }
 
 		// Stops initial animations until page loads.
 			&.is-preload {
@@ -46,10 +54,3 @@
 
   }
   
-  .gatsbyContent {
-    height:100%
-
-    div {
-      height: 100%;
-    }
-  }
