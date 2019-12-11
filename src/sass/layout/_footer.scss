@@ -13,7 +13,7 @@
 		@include color-section(accent4);
 
 		.content {
-			@include padding(6.5em, 0);
+			@include padding(3em, 0);
 			background-color: _palette(accent4, bg);
 
 			> .inner {
@@ -33,7 +33,7 @@
 			}
 
 			@include breakpoint('<=large') {
-				@include padding(5em, 3em);
+				@include padding(3em, 2em);
 
 				> .inner {
 					width: _size(inner-width, large);
