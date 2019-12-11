@@ -38,6 +38,8 @@
     
     .gatsbyContent{
       height: 100%;
+      display: flex;
+      flex-direction: column;
 
       div {
         height: 100%;
