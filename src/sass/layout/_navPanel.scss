@@ -100,7 +100,7 @@
 			visibility: visible;
 		}
 
-		@include breakpoint('<=small') {
+		@include breakpoint('<=medium') {
 			display: block;
 
 			nav {
