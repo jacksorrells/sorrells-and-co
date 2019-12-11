@@ -42,7 +42,7 @@
 			height: inherit;
 			line-height: inherit;
       margin-left: 1.5em;
-      max-width: 20vw;
+      max-width: 15vw;
 
 			a {
         display: flex;
@@ -184,7 +184,15 @@
 				margin-left: -0.25em;
 			}
 		}
-	}
+  }
+  
+  @include breakpoint('<=large') {
+    #header {
+      h1 {
+        max-width: 20vw;
+      }
+    }
+  }
 
 	@include breakpoint('<=medium') {
 		body {
