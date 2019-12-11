@@ -10,7 +10,11 @@
 		@include banner-bg('../../images/banner.jpg');
 		@include color-typography(accent4);
 		@include color-button(accent4);
-		@include color-section(accent4);
+    @include color-section(accent4);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
 
 		.content {
 			@include padding(3em, 0);
