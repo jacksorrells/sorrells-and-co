@@ -36,7 +36,7 @@ export default class CommunityPage extends React.Component {
       return image.src === e.target.src
     });
 
-    console.log('currentIndex -> ', currentIndex)
+    console.log('currentIndex -> ', newCurrentIndex)
     this.setState(state => ({ 
       currentIndex: newCurrentIndex,
       modalIsOpen: !state.modalIsOpen
