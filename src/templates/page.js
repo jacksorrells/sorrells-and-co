@@ -18,12 +18,24 @@ export default class Page extends React.Component {
         } 
       }),
       show_images: _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false),
-      modalIsOpen: false
+      modalIsOpen: false,
+      currentIndex: 0
     };
   }
 
   toggleModal = () => {
     this.setState(state => ({ modalIsOpen: !state.modalIsOpen }))
+  }
+
+  handleGalleryClick = (e) => {
+    let newCurrentIndex = this.state.images.findIndex(image => {
+      return image.src === e.target.src
+    });
+
+    this.setState(state => ({
+      currentIndex: newCurrentIndex,
+      modalIsOpen: !state.modalIsOpen
+    }))
   }
   
   render() {
@@ -49,16 +61,19 @@ export default class Page extends React.Component {
 
               {this.state.show_images && (
                 <>
-                  <Gallery photos={this.state.images} />
-
-                  <button className="button primary" onClick={this.toggleModal}>
-                    Show Modal
-                  </button>
+                  <Gallery 
+                    photos={this.state.images} 
+                    onClick={e => this.handleGalleryClick(e)}  
+                  />
 
                   <ModalGateway>
                     {this.state.modalIsOpen && (
                       <Modal onClose={this.toggleModal} closeOnBackdropClick={true}>
-                        <Carousel views={this.state.images} isFullscreen={true} />
+                        <Carousel 
+                          views={this.state.images} 
+                          isFullscreen={true} 
+                          currentIndex={this.state.currentIndex}  
+                        />
                       </Modal>
                     )}
                   </ModalGateway>

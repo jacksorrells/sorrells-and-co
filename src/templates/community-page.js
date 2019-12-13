@@ -71,13 +71,6 @@ export default class CommunityPage extends React.Component {
                     onClick={e => this.handleGalleryClick(e)} 
                   />
 
-                  <button 
-                    className="button primary" 
-                    onClick={this.toggleModal} 
-                  >
-                    Show Modal
-                  </button>
-
                   <ModalGateway>
                     {this.state.modalIsOpen && (
                       <Modal onClose={this.toggleModal} closeOnBackdropClick={true}>
