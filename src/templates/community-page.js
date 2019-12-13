@@ -30,6 +30,12 @@ export default class CommunityPage extends React.Component {
     console.log('e-> ', e);
     console.log('e.target -> ', e.target)
     console.log('e.target.src -> ', e.target.src);
+
+    let currentIndex = this.state.images.findIndex(image => {
+      return image.src === e.target.src
+    });
+
+    console.log('currentIndex -> ', currentIndex)
   }
 
   render() {
