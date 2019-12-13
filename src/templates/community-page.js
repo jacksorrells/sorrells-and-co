@@ -18,7 +18,8 @@ export default class CommunityPage extends React.Component {
         } 
       }),
       show_images: _.get(this.props, "pageContext.frontmatter.image_gallery.enabled", false),
-      modalIsOpen: false
+      modalIsOpen: false,
+      currentIndex: 0
     };
   }
 
@@ -36,6 +37,7 @@ export default class CommunityPage extends React.Component {
     });
 
     console.log('currentIndex -> ', currentIndex)
+    this.setState = { currentIndex: currentIndex };
   }
 
   render() {
@@ -73,7 +75,11 @@ export default class CommunityPage extends React.Component {
                   <ModalGateway>
                     {this.state.modalIsOpen && (
                       <Modal onClose={this.toggleModal} closeOnBackdropClick={true}>
-                        <Carousel views={this.state.images} isFullscreen={true} />
+                        <Carousel 
+                          views={this.state.images} 
+                          isFullscreen={true} 
+                          currentIndex={this.state.currentIndex} 
+                        />
                       </Modal>
                     )}
                   </ModalGateway>
