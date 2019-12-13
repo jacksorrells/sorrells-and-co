@@ -32,12 +32,15 @@ export default class CommunityPage extends React.Component {
     console.log('e.target -> ', e.target)
     console.log('e.target.src -> ', e.target.src);
 
-    let currentIndex = this.state.images.findIndex(image => {
+    let newCurrentIndex = this.state.images.findIndex(image => {
       return image.src === e.target.src
     });
 
     console.log('currentIndex -> ', currentIndex)
-    this.setState = { currentIndex: currentIndex };
+    this.setState(state => ({ 
+      currentIndex: newCurrentIndex,
+      modalIsOpen: !state.modalIsOpen
+    }));
   }
 
   render() {
@@ -63,7 +66,10 @@ export default class CommunityPage extends React.Component {
 
               {this.state.show_images && (
                 <>
-                  <Gallery photos={this.state.images} onClick={e => this.handleGalleryClick(e)} />
+                  <Gallery 
+                    photos={this.state.images} 
+                    onClick={e => this.handleGalleryClick(e)} 
+                  />
 
                   <button 
                     className="button primary" 
