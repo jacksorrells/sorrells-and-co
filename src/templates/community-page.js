@@ -12,7 +12,7 @@ export default class CommunityPage extends React.Component {
     this.state = {
       images: _.get(this.props, "pageContext.frontmatter.image_gallery.images", []).map(image => {
         return { 
-          src: safePrefix(_.get(this.props, "pageContext.site.siteMetadata.cloudinaryUrl") + "/c_scale,w_auto,dpr_auto,q_auto,f_auto/" + image),
+          src: safePrefix(_.get(this.props, "pageContext.site.siteMetadata.cloudinaryUrl") + "c_scale,w_auto,dpr_auto,q_auto,f_auto/" + image),
           height: 1,
           width: 1
         } 
