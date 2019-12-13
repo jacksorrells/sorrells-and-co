@@ -49,7 +49,7 @@ export default class CommunityPage extends React.Component {
 
               {this.state.show_images && (
                 <>
-                  <Gallery photos={this.state.images} />
+                  <Gallery photos={this.state.images} onClick={e => console.log('e -> ', e)} />
 
                   <button 
                     className="button primary" 
