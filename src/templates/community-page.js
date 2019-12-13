@@ -26,6 +26,10 @@ export default class CommunityPage extends React.Component {
     this.setState(state => ({ modalIsOpen: !state.modalIsOpen }))
   }
 
+  handleGalleryClick = (e) => {
+    console.log('e-> ', e);
+  }
+
   render() {
     console.log('community-page')
     console.log('this.props -> ', this.props);
@@ -49,7 +53,7 @@ export default class CommunityPage extends React.Component {
 
               {this.state.show_images && (
                 <>
-                  <Gallery photos={this.state.images} onClick={e => console.log('e -> ', e)} />
+                  <Gallery photos={this.state.images} onClick={e => this.handleGalleryClick(e)} />
 
                   <button 
                     className="button primary" 
