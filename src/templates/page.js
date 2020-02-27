@@ -72,7 +72,7 @@ export default class Page extends React.Component {
                         <Carousel 
                           views={this.state.images} 
                           isFullscreen={true} 
-                          currentIndex={this.state.currentIndex}  
+                          currentIndex={this.state.currentIndexconfig}  
                         />
                       </Modal>
                     )}
